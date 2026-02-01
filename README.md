@@ -3,6 +3,11 @@
 Public shell for a spatial memory benchmark from egocentric video. This repo
 publishes specifications and documentation only—no code, models, or data.
 
+We are actively developing edge AI capabilities for this benchmark, including on-device data collection and real-time inference.
+
+![Jetson Orin Nano Setup](images/jetson-orin-nano-connected-with-ethernet-and-ssd.jpeg)
+*Jetson Orin Nano development board — initial setup with Ethernet and SSD storage for edge deployment*
+
 ## Contents
 - `docs/data_card.md`: dataset description and usage constraints.
 - `docs/evaluation_protocol.md`: benchmark procedure and metrics definitions.
