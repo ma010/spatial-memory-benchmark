@@ -64,6 +64,18 @@ acceleration mainly reduces extraction and matching time, which matters
 more as frame count grows (matching is quadratic in the exhaustive
 case).
 
+## Runtime Caching
+
+COLMAP stores feature extraction and matching results in `database.db`.
+When re-running the pipeline (e.g. for evaluation), only the mapper
+needs to re-execute if the database is preserved. This significantly
+reduces wall time on repeated runs:
+
+| Run | Wall Time (273 frames) | What Executes |
+|---|---|---|
+| Cold (no database) | ~51 min | Extraction + Matching + Mapper |
+| Warm (database cached) | ~20 min | Mapper only |
+
 ## References
 
 - [COLMAP FAQ](https://colmap.github.io/faq.html)
