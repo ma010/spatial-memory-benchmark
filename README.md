@@ -12,6 +12,8 @@ We are actively developing edge AI capabilities for this benchmark, including on
 - `docs/data_card.md`: dataset description and usage constraints.
 - `docs/evaluation_protocol.md`: benchmark procedure and metrics definitions.
 - `docs/memory_schema.md`: high-level memory representation schema.
+- `docs/progress.md`: development milestones and evaluation results.
+- `docs/colmap_gpu_jetson.md`: running COLMAP with GPU on Jetson devices.
 
 ## Not Included
 - Training or inference code.
